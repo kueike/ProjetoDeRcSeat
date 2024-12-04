@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEAT</title>
+    <link rel="stylesheet" href="testebonito.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="_img/nubU-removebg-preview.png" height="60" style="margin-top: 45px; margin-right: 100px;">
+            <div class="sidebar">
+                <a href="ibiza.html"><img src="_img/ibziass.webp " alt="SEAT Ibiza"></a>
+                <a href="#">IBIZA</a>
+                <a href="leon.html"><img src="_img/seat-leon-sp-fr-trim-desire-red-colour-allow-wheelsoegr-1400x787.png"></a>
+                <a href="#">LEON</a><br><br><br>
+                <a href="ateca.html"><img src="_img/pngwing.com.png" alt="ATECA"></a>
+                <a href="#">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ATECA</a><br><br><br>
+                
+            </div>
+            
+        </div>
+        <script>
+            document.querySelector('.menu').addEventListener('click', function () {
+                const sidebar = this.querySelector('.sidebar');
+                if (sidebar) {
+                    setTimeout(function () {
+                        sidebar.classList.toggle('show');
+                    }, 1000);
+                }
+            });
+    
+            document.querySelector('.sidebar').addEventListener('mouseleave', function () {
+                this.classList.remove('show');
+            });
+    
+            document.addEventListener('click', function (e) {
+                const sidebar = document.querySelector('.sidebar');
+                const menu = document.querySelector('.menu');
+    
+                if (!menu.contains(e.target) && !sidebar.contains(e.target)) {
+                    sidebar.classList.remove('show');
+                }
+            });
+        </script>
+        <nav>
+            <ul>
+                <li><a href="Index.html">O que é SEAT</a></li>
+                <li><a href="Index.html">Curiosidades</a></li>
+                <li><a href="Index.html">Localização</a></li>
+                <li><a href="Index.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <a href="Index.html">
+            <h1>SEAT</h1>
+    </header>
+    <main>
+        <div style="margin-right:-1000px; display: flex;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScjeMAHOmBG6SbhCJ-be7-ZLcoErsuo5wmBcTunx9inrBsiQg/viewform?embedded=true" width="800" height="826" frameborder="0" marginheight="0" marginwidth="0">A carregar…</iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SEAT - Todos os direitos reservados.</p>
+        <ul>
+            <li><a href="https://www.instagram.com/seatportugal?igsh=MXhtM2FkbHlpNzhxZA==">Instagram</a></li>
+            <li><a href="https://www.facebook.com/SEATPortugal">Facebook</a></li>
+            <li><a href="https://x.com/SEATPortugal?t=aJIMgXARj_NmVDnwK1TN9Q&s=08_">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
